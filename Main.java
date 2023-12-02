@@ -71,12 +71,26 @@ public class Main {
         stream02.add(studentGroup4);
 
         Stream stream449 = new Stream(stream01);
-
+        // Сортировка
         StreamService serviceStream = new StreamService(stream449);
 
         for (StudentGroup i : serviceStream.getSortedStream()) {
         System.out.println(i);
         }
+        
+        // Ниже итераторы while и foreach
+        
+         // StreamIterator iterateStream = new StreamIterator(stream449);
+
+        // while (iterateStream.hasNext()) {
+        // System.out.println();
+        // System.out.println(iterateStream.next());
+        // System.out.println();
+        // }
+
+        // for (StudentGroup i: stream449) {
+        // System.out.println(i);
+        // }
 
     }
 
